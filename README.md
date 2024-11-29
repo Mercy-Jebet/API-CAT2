@@ -2,9 +2,9 @@
 <<<<<<< HEAD
 =======
 ## Setting up the environment:
-python -m venv venv
+python -m venv myvenv
 
-source venv/bin/activate  # Or venv\Scripts\activate on Windows
+source myvenv/bin/activate  # Or myvenv\Scripts\activate on Windows
 
 pip install django
 
