@@ -21,3 +21,9 @@ class Order(models.Model):
 
     def __str__(self):
         return f"Order {self.id} by {self.customer.name}"
+
+#RELATIONSHIP BETWEEN CUSTOMER AND ORDER:
+#The Customer model represents individuals who place orders.
+#The Order model uses a ForeignKey to associate each order with a single customer (one-to-many relationship).
+#on_delete=models.CASCADE ensures that if a customer is deleted, all their orders are also removed.
+#related_name="orders" allows accessing orders of a customer using customer.orders.all().
