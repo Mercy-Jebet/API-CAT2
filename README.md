@@ -3,7 +3,7 @@
 ## Setting up the environment:
 python -m venv myvenv
 
-source myvenv/bin/activate  # Or myvenv\Scripts\activate on Windows
+./myvenv\Scripts\activate 
 
 pip install django
 
